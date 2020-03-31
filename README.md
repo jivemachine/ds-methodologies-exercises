@@ -1,1 +1,3 @@
-# dsds-methodologies-exercises
+## Data Science methodoligies 
+
+- 1.) regression
