@@ -84,7 +84,7 @@ def model_significance(ols_model):
     '''
     r2 = model.rsquared
     p_value = model.f_pvalue
-    df_model_sig = pd.DataFrame(np,array(['r^2', 'f p-value']), columns=['metric'])
+    df_model_sig = pd.DataFrame(np.array(['r^2', 'f p-value']), columns=['metric'])
     df_model_sig['value'] = np.array([r2, p_value])
     return df_model_sig
     
