@@ -3,6 +3,12 @@ import numpy as np
 
 import sklearn.model_selection
 import sklearn.preprocessing
+import sklearn.impute
+
+import warnings
+warnings.filterwarnings('ignore')
+
+import acquire
 
 
 # code for prepping iris dataset
