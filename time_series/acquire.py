@@ -76,11 +76,11 @@ def get_store_data():
         # merge all of the DataFrames into one
         df = pd.merge(sales_df, stores_df, left_on='store', right_on='store_id').drop(columns={'store'})
         df = pd.merge(df, items_df, left_on='item', right_on='item_id').drop(columns={'item'})
-
+        
         # convert sale_date to DateTime Index
         df['sale_date'] = pd.to_datetime(df.sale_date)
         df = df.sort_index()
-
+        
         # write merged DateTime df with all data to directory for future use
         df.to_csv('big_df.csv')
         return df
